@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Javascript-blue" alt="badge1"/>
   <img src="https://img.shields.io/badge/HTML5-green" alt="badge2"/>
-  <img src="https://img.shields.io/badge/CCS-red" alt="badge3"/>
+  <img src="https://img.shields.io/badge/CSS-red" alt="badge3"/>
 </p>
 
 ## Descripción
