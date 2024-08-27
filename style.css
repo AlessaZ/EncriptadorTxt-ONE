@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primario-color: #0A3871;
+    --secundario-color: #ffffff;
+    --terciario-color: #343A40;
+    --cuarto-color: #495057;
+    --bg-color: #F3F5FC;
+    --hover-color: #D8DFE8;
+
+    --fuente-inter: 'Inter';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-inter);
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    height: 100vh;
+}
+
+.main__right_panel, 
+.main__left_panel {
+    padding: 32px;
+    display: flex;
+    text-align: center;
+}
+
+.main__right_panel {
+    align-items: flex-start;
+    width: 80%;
+}
+
+.main__right_panel__text {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 0 15% 8%;
+    width: 100%;
+}
+
+.textarea, ::placeholder {
+    font-weight: 400;
+    color: var(--primario-color);
+    font-size: 2rem;
+}
+
+.textarea {
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    height: 500px;
+}
+
+.small {
+    text-align: start;
+    margin: 3% 0;
+    display: flex;
+    gap: 10px;
+}
+
+.main__right_panel__text__buttons__div {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.main__right_panel__text__buttons {
+    flex: 1;
+}
+
+.main__left_panel {
+    margin: 40px;
+    padding: 40px;
+    border-radius: 32px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secundario-color);
+    width: 20%;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.main__left_panel__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    margin-top: 10%;
+}
+
+.main__left_panel__text__p1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.main__left_panel__text__p2 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.main__left_panel__text__p3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--cuarto-color);
+    word-break: break-word;
+}
+
+#noEncontrado {
+    width: 70%;
+}
+
+.main__right_panel__text__buttons, 
+#btnCopiar {
+    padding: 24px;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 1rem;
+    border: 1px solid var(--primario-color);
+}
+
+#btnCopiar {
+    width: 100%;
+}
+
+#btnCopiar, 
+#btnDesencriptar {
+    color: var(--primario-color);
+    background-color: transparent;
+}
+
+#btnCopiar:hover, 
+#btnDesencriptar:hover {
+    background-color: var(--hover-color);
+}
+
+#btnEncriptar {
+    color: var(--secundario-color);
+    background-color: var(--primario-color);
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: auto;
+        height: auto;
+    }
+
+    .main__right_panel {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .main__right_panel__text {
+        margin: 5% 0;
+        padding: 20px 20px 0 20px;
+    }
+
+    .main__right_panel__text__buttons__div {
+        gap: 25px;
+    }
+
+    .textarea {
+        height: 460px;
+    }
+
+    .main__left_panel {
+        margin: 0 5% 5%;
+        padding: 28px;
+        width: 90%;
+    }
+
+    .main__left_panel__text {
+        margin: 0;
+    }
+
+    .main__left_panel__text__p3 {
+        padding-bottom: 40px;
+    }
+
+    #noEncontrado {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .main__right_panel__text {
+        margin: 20% 0 0 0;
+        padding: 0;
+    }
+
+    .main__right_panel__text__buttons__div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .small{
+        margin-bottom: 15%;
+    }
+
+    .textarea {
+        height: 450px;
+        margin-bottom: 10%;
+    }
+
+    .main__left_panel {
+        margin: 0 5% 5% 5%;
+        padding: 28px;
+        width: 90%;
+    }
+
+    #LogoAlura {
+        width: 25%;
+    }
+
+    .main__left_panel__text__p3 {
+        padding-bottom: 40px;
+    }
+
+    #noEncontrado {
+        display: none;
+    }
+}
